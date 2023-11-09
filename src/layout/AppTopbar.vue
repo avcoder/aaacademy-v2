@@ -3,10 +3,13 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 import { useLayout } from '@/layout/composables/layout';
 import { useRouter } from 'vue-router';
 
+import InputText from 'primevue/inputtext';
+
 const { layoutConfig, onMenuToggle } = useLayout();
 
 const outsideClickListener = ref(null);
 const topbarMenuActive = ref(false);
+const searchkeyword = ref('');
 const router = useRouter();
 
 onMounted(() => {
@@ -74,6 +77,13 @@ const isOutsideClicked = (event) => {
         <button class="p-link layout-topbar-menu-button layout-topbar-button" @click="onTopBarMenuButton()">
             <i class="pi pi-ellipsis-v"></i>
         </button>
+
+        <div style="width: 100%; text-align: center">
+            <span class="p-input-icon-left">
+                <i class="pi pi-search" />
+                <InputText v-model="value1" placeholder="What do you want to learn today?" style="width: 400px" />
+            </span>
+        </div>
 
         <div class="layout-topbar-menu" :class="topbarMenuClasses">
             <button @click="onTopBarMenuButton()" class="p-link layout-topbar-button">
