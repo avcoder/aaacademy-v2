@@ -129,7 +129,7 @@ watch(
                     </section>
                 </div>
                 <div class="col-12 md:col-6 overflow-hidden">
-                    <img src="/demo/images/blocks/hero/hero-1.png" alt="Image" class="md:ml-auto block md:h-full" style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)" />
+                    <img src="/layout/images/AAscreenshot.webp" alt="Image" class="md:ml-auto block md:h-full" style="height: 400px !important" />
                 </div>
             </div>
         </div>
