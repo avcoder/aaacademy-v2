@@ -31,22 +31,38 @@ const shouldShowListButton = () => {
         <Accordion :activeIndex="0">
             <AccordionTab header="Introduction">
                 <DataTable :value="['hi', 'bye']">
-                    <Column field="code" header="Video #"></Column>
+                    <ul>
+                        <li>View Video #1</li>
+                        <li>View Video #2</li>
+                        <li>View Video #3</li>
+                    </ul>
                 </DataTable>
             </AccordionTab>
             <AccordionTab header="Reporting">
                 <DataTable :value="products">
-                    <Column field="code" header="Video #"></Column>
+                    <ul>
+                        <li>View Video #4</li>
+                        <li>View Video #5</li>
+                        <li>View Video #6</li>
+                    </ul>
                 </DataTable>
             </AccordionTab>
             <AccordionTab header="Integrations">
                 <DataTable :value="products">
-                    <Column field="code" header="Video #"></Column>
+                    <ul>
+                        <li>View Video #7</li>
+                        <li>View Video #8</li>
+                        <li>View Video #9</li>
+                    </ul>
                 </DataTable>
             </AccordionTab>
             <AccordionTab header="Account Management">
                 <DataTable :value="products">
-                    <Column field="code" header="Video #"></Column>
+                    <ul>
+                        <li>View Video #10</li>
+                        <li>View Video #11</li>
+                        <li>View Video #12</li>
+                    </ul>
                 </DataTable>
             </AccordionTab>
         </Accordion>
