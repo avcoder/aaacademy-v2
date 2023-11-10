@@ -7,7 +7,7 @@ const videos = ref(null);
 const productService = new ProductService();
 
 onBeforeMount(() => {
-    productService.getVideos().then((data) => (videos.value = data));
+    productService.getVideos().then((data) => (videos.value = data.filter((v) => Math.random() > 0.5)));
 });
 
 const getProgress = (value) => {
