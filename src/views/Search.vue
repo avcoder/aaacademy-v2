@@ -88,11 +88,17 @@ const getImage = (url) => {
                 <template #list="slotProps">
                     <div class="col-12">
                         <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4">
-                            <img class="shadow-2 block xl:block mx-auto border-round" style="height: 130px; width: 230px" :src="getImage(slotProps.data.item_image)" :alt="slotProps.data.item_title" />
+                            <router-link to="/learning">
+                                <img class="shadow-2 block xl:block mx-auto border-round" style="height: 130px; width: 230px" :src="getImage(slotProps.data.item_image)" :alt="slotProps.data.item_title" />
+                            </router-link>
                             <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
                                 <div class="flex flex-column align-items-center sm:align-items-start gap-3">
                                     <span>{{ slotProps.data.item_type.toUpperCase() }}</span>
-                                    <div class="text-2xl font-bold text-900 margin-top-small">{{ slotProps.data.item_title }}</div>
+                                    <div class="text-2xl font-bold text-900 margin-top-small">
+                                        <router-link to="/learning">
+                                            {{ slotProps.data.item_title }}
+                                        </router-link>
+                                    </div>
                                     <p style="color: var(--text-color-secondary)">{{ slotProps.data.item_learners_count }} learners | {{ formatDate(slotProps.data) }}</p>
                                     <div style="width: 100px">
                                         <ProgressBar :value="getProgress(slotProps.data.item_progress)" style="height: 3px" :showValue="false"></ProgressBar>
