@@ -33,7 +33,7 @@ onBeforeMount(() => {
         </div>
     </div>
     <div class="grid">
-        <div class="col-12" v-if="videos.value">
+        <div class="col-12" v-if="!videos">
             <div class="border-round border-1 surface-border p-4 surface-card">
                 <ul class="m-0 p-0 list-none">
                     <li class="mb-3">
