@@ -129,7 +129,7 @@ watch(
                     </section>
                 </div>
                 <div class="col-12 md:col-6 overflow-hidden">
-                    <img src="/layout/images/AAscreenshot.webp" alt="Image" class="md:ml-auto block md:h-full" style="height: 400px !important" />
+                    <img src="/layout/images/AAscreenshot.webp" alt="Image" class="md:ml-auto block md:h-full" style="height: 340px !important" />
                 </div>
             </div>
         </div>
