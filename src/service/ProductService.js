@@ -12,17 +12,14 @@ export default class ProductService {
     // }
 
     getVideos() {
-        // return fetch('demo/data/videos.json')
-        //     .then((res) => res.json())
-        //     .then((d) => d.data);
-        return fetch('https://184.162.117.121:4433/?asset=videos')
+        return fetch('demo/data/videos.json')
             .then((res) => res.json())
-            .then((d) => d.results);
+            .then((d) => d.data);
     }
 
     getProductsWithOrdersSmall() {
         return fetch('demo/data/products-orders-small.json')
             .then((res) => res.json())
-            .then((d) => d.results.rows);
+            .then((d) => d.data);
     }
 }
