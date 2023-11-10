@@ -6,7 +6,11 @@ import AppMenuItem from './AppMenuItem.vue';
 const model = ref([
     {
         label: 'Home',
-        items: [{ label: 'Start Learning', icon: 'pi pi-fw pi-home', to: '/' }]
+        items: [
+            { label: 'Start Learning', icon: 'pi pi-fw pi-home', to: '/' },
+            { label: 'My Library', icon: 'pi pi-fw pi-book', to: '/blocks', badge: 'NEW' },
+            { label: 'Community', icon: 'pi pi-fw pi-users', to: '/community' }
+        ]
     },
     {
         label: 'Browse',
@@ -26,10 +30,6 @@ const model = ref([
             { label: 'Tasks', icon: 'pi pi-fw pi-check-circle', to: '/uikit/message' },
             { label: 'Enterprise', icon: 'pi pi-fw pi-building', to: '/uikit/file' }
         ]
-    },
-    {
-        label: 'Library',
-        items: [{ label: 'My Library', icon: 'pi pi-fw pi-book', to: '/blocks', badge: 'NEW' }]
     },
     {
         label: 'Level',

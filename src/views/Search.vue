@@ -22,7 +22,12 @@ onBeforeMount(() => {
 <template>
     <div class="grid">
         <div class="col-12">
-            <div class="card"></div>
+            <div class="card">
+                <div class="row">
+                    <Dropdown v-model="selectedCity" :options="cities" optionLabel="name" placeholder="English" class="w-full md:w-8rem" />
+                    <MultiSelect v-model="selectedCities" :options="cities" optionLabel="name" placeholder="Type" :maxSelectedLabels="3" class="w-full md:w-7rem" />
+                </div>
+            </div>
         </div>
     </div>
     <div class="grid">
