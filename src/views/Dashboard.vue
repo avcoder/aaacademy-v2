@@ -160,7 +160,7 @@ watch(
             </div>
 
             <div class="card">
-                <h5>Sales Overview</h5>
+                <h5>New Videos vs Watched Videos</h5>
                 <Chart type="line" :data="lineData" :options="lineOptions" />
             </div>
         </div>
