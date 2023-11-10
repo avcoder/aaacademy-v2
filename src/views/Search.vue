@@ -23,6 +23,10 @@ const formatDate = ({ item_date_updated, item_date_created }) => {
         year: 'numeric'
     });
 };
+
+const getImage = (url) => {
+    return url ?? '/layout/images/aaDefault.png';
+};
 </script>
 
 <template>
@@ -84,8 +88,7 @@ const formatDate = ({ item_date_updated, item_date_created }) => {
                 <template #list="slotProps">
                     <div class="col-12">
                         <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4">
-                            <!-- backup for below img :src="`/layout/images/aaDefault.png`" -->
-                            <img class="shadow-2 block xl:block mx-auto border-round" style="height: 130px; width: 230px" :src="slotProps.data.item_image" :alt="slotProps.data.item_title" />
+                            <img class="shadow-2 block xl:block mx-auto border-round" style="height: 130px; width: 230px" :src="getImage(slotProps.data.item_image)" :alt="slotProps.data.item_title" />
                             <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
                                 <div class="flex flex-column align-items-center sm:align-items-start gap-3">
                                     <span>{{ slotProps.data.item_type.toUpperCase() }}</span>
