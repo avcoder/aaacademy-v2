@@ -82,7 +82,7 @@ const isOutsideClicked = (event) => {
             <span class="p-input-icon-right">
                 <i v-if="!searchkeyword.length" class="pi pi-search" />
                 <i v-else class="pi pi-times" aria-label="Clear" @click="searchkeyword = ''" />
-                <InputText v-model="searchkeyword" placeholder="What do you want to learn today?" size="large" style="width: 400px" />
+                <InputText v-model="searchkeyword" placeholder="What do you want to learn today?" size="large" style="width: 400px" @keyup.enter="router.push('/search')" />
             </span>
         </div>
 
