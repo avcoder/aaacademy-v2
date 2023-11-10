@@ -64,10 +64,63 @@
                         </p>
                     </TabPanel>
                     <TabPanel header="Discussion">
-                        <p class="m-0">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
-                            culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-                        </p>
+                        <Panel toggleable>
+                            <template #header>
+                                <div class="flex align-items-center gap-2">
+                                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" size="large" shape="circle" />
+                                    <span class="font-bold">Amy Elsner</span>
+                                </div>
+                            </template>
+                            <template #footer>
+                                <div class="flex flex-wrap align-items-center justify-content-between gap-3">
+                                    <div class="flex align-items-center gap-2">
+                                        <Button icon="pi pi-user" rounded text></Button>
+                                        <Button icon="pi pi-bookmark" severity="secondary" rounded text></Button>
+                                    </div>
+                                    <span class="p-text-secondary">Updated 2 hours ago</span>
+                                </div>
+                            </template>
+                            <template #icons>
+                                <button class="p-panel-header-icon p-link mr-2" @click="toggle">
+                                    <span class="pi pi-cog"></span>
+                                </button>
+                                <Menu ref="menu" id="config_menu" :model="items" popup />
+                            </template>
+                            <p class="m-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                id est laborum.
+                            </p>
+                        </Panel>
+                        <br />
+                        <Panel toggleable>
+                            <template #header>
+                                <div class="flex align-items-center gap-2">
+                                    <Avatar image="https://avatars.githubusercontent.com/u/7874705?v=4" size="large" shape="circle" />
+                                    <span class="font-bold">AV Coder</span>
+                                </div>
+                            </template>
+                            <template #footer>
+                                <div class="flex flex-wrap align-items-center justify-content-between gap-3">
+                                    <div class="flex align-items-center gap-2">
+                                        <Button icon="pi pi-user" rounded text></Button>
+                                        <Button icon="pi pi-bookmark" severity="secondary" rounded text></Button>
+                                    </div>
+                                    <span class="p-text-secondary">Updated 2 hours ago</span>
+                                </div>
+                            </template>
+                            <template #icons>
+                                <button class="p-panel-header-icon p-link mr-2" @click="toggle">
+                                    <span class="pi pi-cog"></span>
+                                </button>
+                                <Menu ref="menu" id="config_menu" :model="items" popup />
+                            </template>
+                            <p class="m-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                id est laborum.
+                            </p>
+                        </Panel>
                     </TabPanel>
                 </TabView>
             </div>
