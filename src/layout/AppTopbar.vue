@@ -78,10 +78,11 @@ const isOutsideClicked = (event) => {
             <i class="pi pi-ellipsis-v"></i>
         </button>
 
-        <div style="width: 70%; text-align: center">
-            <span class="p-input-icon-left">
-                <i class="pi pi-search" />
-                <InputText v-model="value1" placeholder="What do you want to learn today?" style="width: 400px" />
+        <div style="width: 60%; text-align: center">
+            <span class="p-input-icon-right">
+                <i v-if="!searchkeyword.length" class="pi pi-search" />
+                <i v-else class="pi pi-times" aria-label="Clear" @click="searchkeyword = ''" />
+                <InputText v-model="searchkeyword" placeholder="What do you want to learn today?" size="large" style="width: 400px" />
             </span>
         </div>
 

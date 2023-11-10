@@ -14,7 +14,7 @@ const model = ref([
             { label: 'Getting Started', icon: 'pi pi-fw pi-id-card', to: '/uikit/formlayout' },
             { label: 'Account Management', icon: 'pi pi-fw pi-cog', to: '/uikit/input' },
             { label: 'Campaigns', icon: 'pi pi-fw pi-database', to: '/uikit/floatlabel' },
-            { label: 'Reports', icon: 'pi pi-fw pi-envelope', to: '/uikit/invalidstate' },
+            { label: 'Reports', icon: 'pi pi-fw pi-file-pdf', to: '/uikit/invalidstate' },
             { label: 'Dashboards', icon: 'pi pi-fw pi-th-large', to: '/uikit/button', class: 'rotated-icon' },
             { label: 'White Label', icon: 'pi pi-fw pi-wrench', to: '/uikit/table' },
             { label: 'Integrations', icon: 'pi pi-fw pi-star', to: '/uikit/list' },
@@ -34,9 +34,9 @@ const model = ref([
     {
         label: 'Level',
         items: [
-            { label: 'Beginner', icon: 'pi pi-fw pi-car', to: '/utilities/icons' },
-            { label: 'Intermediate', icon: 'pi pi-fw pi-truck', url: 'https://www.primefaces.org/primeflex/', target: '_blank' },
-            { label: 'Advanced', icon: 'pi pi-fw pi-prime', url: 'https://www.primefaces.org/primeflex/', target: '_blank' }
+            { label: 'Beginner', icon: 'pi pi-fw pi-send', to: '/utilities/icons' },
+            { label: 'Intermediate', icon: 'pi pi-fw pi-car', url: 'https://www.primefaces.org/primeflex/', target: '_blank' },
+            { label: 'Advanced', icon: 'pi pi-fw pi-truck', url: 'https://www.primefaces.org/primeflex/', target: '_blank' }
         ]
     }
     // {
