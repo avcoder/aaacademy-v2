@@ -42,11 +42,20 @@
             <div class="card">
                 <TabView>
                     <TabPanel header="Overview">
+                        <h4>Course details</h4>
+                        <p style="color: var(--text-color-secondary)">5m 20s | Beginner | Updated: Jun 2023</p>
                         <p class="m-0">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
                             laborum.
                         </p>
+
+                        <h4>Skills covered</h4>
+                        <div style="display: flex; justify-content: space-around; width: 250px">
+                            <Chip label="Reports" />
+                            <Chip label="Metrics" />
+                            <Chip label="Integrations" />
+                        </div>
                     </TabPanel>
                     <TabPanel header="Transcript">
                         <p class="m-0">
