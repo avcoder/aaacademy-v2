@@ -134,27 +134,27 @@ const router = createRouter({
                 {
                     path: '/utilities/icons',
                     name: 'icons',
-                    component: () => import('@/views/utilities/FormLayout.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 {
                     path: '/pages/timeline',
                     name: 'timeline',
-                    component: () => import('@/views/pages/FormLayout.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 {
                     path: '/pages/empty',
                     name: 'empty',
-                    component: () => import('@/views/pages/FormLayout.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 {
                     path: '/pages/crud',
                     name: 'crud',
-                    component: () => import('@/views/pages/FormLayout.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 {
                     path: '/documentation',
                     name: 'documentation',
-                    component: () => import('@/views/utilities/FormLayout.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 }
             ]
         },
