@@ -91,7 +91,7 @@ const getImage = (url) => {
                             <router-link to="/learning">
                                 <img class="shadow-2 block xl:block mx-auto border-round" style="height: 130px; width: 230px" :src="getImage(slotProps.data.item_image)" :alt="slotProps.data.item_title" />
                             </router-link>
-                            <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
+                            <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-end flex-1 gap-4">
                                 <div class="flex flex-column align-items-center sm:align-items-start gap-3">
                                     <span>{{ slotProps.data.item_type.toUpperCase() }}</span>
                                     <div class="text-2xl font-bold text-900 margin-top-small">
@@ -114,6 +114,7 @@ const getImage = (url) => {
                                         <Tag :value="slotProps.data.inventoryStatus" :severity="getSeverity(slotProps.data)"></Tag>
                                     </div> -->
                                 </div>
+                                <Button label="Save" severity="Primary" />
                                 <!-- <div class="flex sm:flex-column align-items-center sm:align-items-end gap-3 sm:gap-2">
                                     <span class="text-2xl font-semibold">${{ slotProps.data.price }}</span>
                                     <Button icon="pi pi-shopping-cart" rounded :disabled="slotProps.data.inventoryStatus === 'OUTOFSTOCK'"></Button>
