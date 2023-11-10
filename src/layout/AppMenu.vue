@@ -28,8 +28,8 @@ const model = ref([
             { label: 'Google Sheets App', icon: 'pi pi-fw pi-clone', to: '/uikit/overlay' },
             { label: 'Labs', icon: 'pi pi-fw pi-hourglass', to: '/uikit/media' },
             { label: 'Backlinks', icon: 'pi pi-fw pi-directions-alt', to: '/uikit/menu', preventExact: true },
-            { label: 'Tasks', icon: 'pi pi-fw pi-check-circle', to: '/uikit/message' },
-            { label: 'Enterprise', icon: 'pi pi-fw pi-building', to: '/uikit/message' }
+            { label: 'Tasks', icon: 'pi pi-fw pi-check-circle', to: '/uikit/file' },
+            { label: 'Enterprise', icon: 'pi pi-fw pi-building', to: '/uikit/file' }
         ]
     },
     {
