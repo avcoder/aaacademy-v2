@@ -36,7 +36,7 @@ onBeforeMount(() => {
                 <template #list="slotProps">
                     <div class="col-12">
                         <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4">
-                            <img class="shadow-2 block xl:block mx-auto border-round" :src="`https://placehold.co/230x120`" :alt="slotProps.data.item_title" />
+                            <img class="shadow-2 block xl:block mx-auto border-round" style="height: 130px; width: 230px" :src="`/layout/images/aaDefault.png`" :alt="slotProps.data.item_title" />
                             <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
                                 <div class="flex flex-column align-items-center sm:align-items-start gap-3">
                                     <span>{{ slotProps.data.item_type.toUpperCase() }}</span>

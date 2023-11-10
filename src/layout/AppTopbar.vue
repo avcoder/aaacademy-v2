@@ -64,7 +64,7 @@ const isOutsideClicked = (event) => {
 </script>
 
 <template>
-    <div class="layout-topbar">
+    <div class="layout-topbar" style="flex-wrap: wrap">
         <router-link to="/" class="layout-topbar-logo">
             <img :src="logoUrl" alt="logo" />
             <span style="display: block; transform: translate(-150px, 28px); color: #0072ee; font-size: 18px">Academy</span>
