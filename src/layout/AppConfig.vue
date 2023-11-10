@@ -1,10 +1,9 @@
 <script setup>
-import RadioButton from 'primevue/radiobutton';
-import Button from 'primevue/button';
-import InputSwitch from 'primevue/inputswitch';
 import Sidebar from 'primevue/sidebar';
 
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
+import { useRouter } from 'vue-router';
+const router = useRouter();
 
 defineProps({
     simple: {
@@ -17,10 +16,14 @@ const visible = ref(false);
 const onConfigButtonClick = () => {
     visible.value = !visible.value;
 };
+
+const shouldShowListButton = () => {
+    return router.currentRoute.value.name === 'learning';
+};
 </script>
 
 <template>
-    <button class="layout-config-button p-link" type="button" @click="onConfigButtonClick()">
+    <button v-if="shouldShowListButton()" class="layout-config-button p-link" type="button" @click="onConfigButtonClick()">
         <i class="pi pi-list"></i>
     </button>
 
