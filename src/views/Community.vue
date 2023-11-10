@@ -10,6 +10,9 @@
                     <div class="text-700 text-2xl mb-5">Gain knowledge through the collection of conversation topics and frequently asked questions.</div>
                     <Button label="Join Now" icon="pi pi-discord" class="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap"></Button>
                 </div>
+                <br />
+                <br />
+                <br />
                 <Panel toggleable>
                     <template #header>
                         <div class="flex align-items-center gap-2">
@@ -32,9 +35,7 @@
                         </button>
                         <Menu ref="menu" id="config_menu" :model="items" popup />
                     </template>
-                    <p class="m-0">
-                        Help me I'm new to AgencyAnalytics.. how do I best get started learning about all of the cool features this platform has to offer?
-                    </p>
+                    <p class="m-0">Help me I'm new to AgencyAnalytics.. how do I best get started learning about all of the cool features this platform has to offer?</p>
                 </Panel>
                 <Panel toggleable>
                     <template #header>
@@ -58,9 +59,7 @@
                         </button>
                         <Menu ref="menu" id="config_menu" :model="items" popup />
                     </template>
-                    <p class="m-0">
-                        Hey Maud!  Welcome to our awesome community!  You're going to love using AgencyAnalytics!
-                        I found the best way is to check out some AgencyAnalytics Academy learning videos.</p>
+                    <p class="m-0">Hey Maud! Welcome to our awesome community! You're going to love using AgencyAnalytics! I found the best way is to check out some AgencyAnalytics Academy learning videos.</p>
                 </Panel>
                 <Panel toggleable>
                     <template #header>
@@ -84,9 +83,7 @@
                         </button>
                         <Menu ref="menu" id="config_menu" :model="items" popup />
                     </template>
-                    <p class="m-0">
-                        Oh that's really cool... Thanks Jack!
-                    </p>
+                    <p class="m-0">Oh that's really cool... Thanks Jack!</p>
                 </Panel>
             </div>
         </div>
