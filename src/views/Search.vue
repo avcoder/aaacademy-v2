@@ -1,101 +1,72 @@
 <script setup>
-import { FilterMatchMode, FilterOperator } from 'primevue/api';
-import CustomerService from '@/service/CustomerService';
 import ProductService from '@/service/ProductService';
 import { ref, onBeforeMount } from 'vue';
 
-const customer1 = ref(null);
-const customer2 = ref(null);
-const customer3 = ref(null);
-const filters1 = ref(null);
-const loading1 = ref(null);
-const loading2 = ref(null);
-const idFrozen = ref(false);
-const products = ref(null);
-const expandedRows = ref([]);
-const statuses = ref(['unqualified', 'qualified', 'new', 'negotiation', 'renewal', 'proposal']);
-const representatives = ref([
-    { name: 'Amy Elsner', image: 'amyelsner.png' },
-    { name: 'Anna Fali', image: 'annafali.png' },
-    { name: 'Asiya Javayant', image: 'asiyajavayant.png' },
-    { name: 'Bernardo Dominic', image: 'bernardodominic.png' },
-    { name: 'Elwin Sharvill', image: 'elwinsharvill.png' },
-    { name: 'Ioni Bowcher', image: 'ionibowcher.png' },
-    { name: 'Ivan Magalhaes', image: 'ivanmagalhaes.png' },
-    { name: 'Onyama Limba', image: 'onyamalimba.png' },
-    { name: 'Stephen Shaw', image: 'stephenshaw.png' },
-    { name: 'XuXue Feng', image: 'xuxuefeng.png' }
-]);
+const videos = ref(null);
 
-const customerService = new CustomerService();
 const productService = new ProductService();
 
 onBeforeMount(() => {
-    productService.getProductsWithOrdersSmall().then((data) => (products.value = data));
-    customerService.getCustomersLarge().then((data) => {
-        customer1.value = data;
-        loading1.value = false;
-        customer1.value.forEach((customer) => (customer.date = new Date(customer.date)));
-    });
-    customerService.getCustomersLarge().then((data) => (customer2.value = data));
-    customerService.getCustomersMedium().then((data) => (customer3.value = data));
-    loading2.value = false;
-
-    initFilters1();
+    productService.getVideos().then((data) => (videos.value = data));
 });
 
-const initFilters1 = () => {
-    filters1.value = {
-        global: { value: null, matchMode: FilterMatchMode.CONTAINS },
-        name: { operator: FilterOperator.AND, constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }] },
-        'country.name': { operator: FilterOperator.AND, constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }] },
-        representative: { value: null, matchMode: FilterMatchMode.IN },
-        date: { operator: FilterOperator.AND, constraints: [{ value: null, matchMode: FilterMatchMode.DATE_IS }] },
-        balance: { operator: FilterOperator.AND, constraints: [{ value: null, matchMode: FilterMatchMode.EQUALS }] },
-        status: { operator: FilterOperator.OR, constraints: [{ value: null, matchMode: FilterMatchMode.EQUALS }] },
-        activity: { value: [0, 50], matchMode: FilterMatchMode.BETWEEN },
-        verified: { value: null, matchMode: FilterMatchMode.EQUALS }
-    };
-};
-
-const clearFilter1 = () => {
-    initFilters1();
-};
-const expandAll = () => {
-    expandedRows.value = products.value.filter((p) => p.id);
-};
-const collapseAll = () => {
-    expandedRows.value = null;
-};
-const formatCurrency = (value) => {
-    return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-};
-
-const formatDate = (value) => {
-    return value.toLocaleDateString('en-US', {
-        day: '2-digit',
-        month: '2-digit',
-        year: 'numeric'
-    });
-};
-const calculateCustomerTotal = (name) => {
-    let total = 0;
-    if (customer3.value) {
-        for (let customer of customer3.value) {
-            if (customer.representative.name === name) {
-                total++;
-            }
-        }
-    }
-
-    return total;
-};
+// const formatDate = (value) => {
+//     return value.toLocaleDateString('en-US', {
+//         day: '2-digit',
+//         month: '2-digit',
+//         year: 'numeric'
+//     });
+// };
 </script>
 
 <template>
     <div class="grid">
         <div class="col-12">
             <div class="card"></div>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="col-12">
+            <DataView :value="videos">
+                <template #list="slotProps">
+                    <div class="col-12">
+                        <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4">
+                            <img class="shadow-2 block xl:block mx-auto border-round" :src="`https://placehold.co/230x120`" :alt="slotProps.data.item_title" />
+                            <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
+                                <div class="flex flex-column align-items-center sm:align-items-start gap-3">
+                                    <span>{{ slotProps.data.item_type.toUpperCase() }}</span>
+                                    <div class="text-2xl font-bold text-900 margin-top-small">{{ slotProps.data.item_title }}</div>
+                                    <ProgressBar value="50"></ProgressBar>
+                                    <!-- <Rating :modelValue="slotProps.data.rating" readonly :cancel="false"></Rating> -->
+                                    <!-- <div class="flex align-items-center gap-3">
+                                        <span class="flex align-items-center gap-2">
+                                            <i class="pi pi-tag"></i>
+                                            <span class="font-semibold">{{ slotProps.data.category }}</span>
+                                        </span>
+                                        <Tag :value="slotProps.data.inventoryStatus" :severity="getSeverity(slotProps.data)"></Tag>
+                                    </div> -->
+                                </div>
+                                <!-- <div class="flex sm:flex-column align-items-center sm:align-items-end gap-3 sm:gap-2">
+                                    <span class="text-2xl font-semibold">${{ slotProps.data.price }}</span>
+                                    <Button icon="pi pi-shopping-cart" rounded :disabled="slotProps.data.inventoryStatus === 'OUTOFSTOCK'"></Button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </DataView>
+
+            <!-- <div class="card">
+                <Card v-for="video in videos" :key="video.item_title">
+                    <template #title> {{ video.item_title }} </template>
+                    <template #content>
+                        <p class="m-0">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate
+                            neque quas!
+                        </p>
+                    </template>
+                </Card>
+            </div> -->
         </div>
     </div>
 </template>

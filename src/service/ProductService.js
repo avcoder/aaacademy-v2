@@ -5,8 +5,14 @@ export default class ProductService {
             .then((d) => d.data);
     }
 
-    getProducts() {
-        return fetch('demo/data/products.json')
+    // getProducts() {
+    //     return fetch('demo/data/products.json')
+    //         .then((res) => res.json())
+    //         .then((d) => d.data);
+    // }
+
+    getVideos() {
+        return fetch('demo/data/videos.json')
             .then((res) => res.json())
             .then((d) => d.data);
     }

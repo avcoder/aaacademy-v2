@@ -124,12 +124,12 @@ watch(
                         <div class="text-6xl text-primary font-bold mb-3">your marketing agency can deliver</div>
                         <p class="mt-0 mb-4 text-700 line-height-3">Find out how to connect all your clients’ data under one roof. Learn to create customizable dashboards and automated reports your clients will love.</p>
 
-                        <Button label="Start Learning Now" type="button" class="mr-3 p-button-raised"></Button>
+                        <Button label="Start Learning Now" type="button" class="mr-3 p-button-raised" size="large"></Button>
                         <!-- <Button label="Live Demo" type="button" class="p-button-outlined"></Button> -->
                     </section>
                 </div>
                 <div class="col-12 md:col-6 overflow-hidden">
-                    <img src="/layout/images/AAscreenshot.webp" alt="Image" class="md:ml-auto block md:h-full" style="height: 340px !important" />
+                    <img src="/layout/images/AAscreenshot.webp" alt="Image" class="md:ml-auto block md:h-full" style="height: 340px !important; margin: 100px 0" />
                 </div>
             </div>
         </div>

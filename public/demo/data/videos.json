@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "item_title": "Integrating Google Sheets",
+            "item_type": "course",
+            "item_image": "https://placehold.co/230x150",
+            "item_level": "beginner",
+            "item_in_library": false,
+            "item_learners_count": 123,
+            "item_date_created": "May 2023",
+            "item_date_update": "Updated Jun 2023",
+            "item_video_duration": "5m 50s",
+            "item_url": "https://www.youtube.com/watch?v=OAzdy0byLmM",
+            "item_description": "In this video, we’ll show you how to get your marketing data from top marketing platforms into Google Sheets for that extra handling and analysis.",
+            "item_progress": "10%"
+        },
+        {
+            "item_title": "Quick Start Video",
+            "item_type": "video",
+            "item_image": "https://placehold.co/230x150",
+            "item_level": "intermediate",
+            "item_in_library": true,
+            "item_learners_count": 200,
+            "item_date_created": "June 2023",
+            "item_date_update": "Updated July 2023",
+            "item_video_duration": "15m 50s",
+            "item_url": "https://help.agencyanalytics.com/en/articles/4999051-agencyanalytics-quick-start-video",
+            "item_description": "This video outlines what AgencyAnalytics can do, with the aim of helping you get set up fast.",
+            "item_progress": "50%"
+        },
+        {
+            "item_title": "How to clone a custom metric",
+            "item_type": "video",
+            "item_image": "https://placehold.co/230x150",
+            "item_level": "advanced",
+            "item_in_library": true,
+            "item_learners_count": 200,
+            "item_date_created": "Aug 2023",
+            "item_date_update": "Updated Sept 2023",
+            "item_video_duration": "15m 50s",
+            "item_url": "https://help.agencyanalytics.com/en/articles/5571457-how-to-clone-a-custom-metric",
+            "item_description": "Choose to clone custom metrics when creating a new custom metric, via your campaign's settings area.",
+            "item_progress": "0%"
+        }
+    ]
+}
