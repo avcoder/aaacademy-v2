@@ -29,7 +29,6 @@ const getImage = (url) => {
 };
 
 const getDuration = (time) => {
-    console.log(time);
     return time ? `${time.replace(':', 'm ')}s` : '';
 };
 </script>
