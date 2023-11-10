@@ -13,7 +13,7 @@ const model = ref([
             { label: 'View a video', icon: 'pi pi-fw pi-youtube', to: '/learning' }
         ]
     },
-    {
+   /* {
         label: 'Browse',
         items: [
             { label: 'Getting Started', icon: 'pi pi-fw pi-id-card', to: '/uikit/formlayout' },
@@ -31,7 +31,7 @@ const model = ref([
             { label: 'Tasks', icon: 'pi pi-fw pi-check-circle', to: '/uikit/file' },
             { label: 'Enterprise', icon: 'pi pi-fw pi-building', to: '/uikit/file' }
         ]
-    },
+    },*/
     {
         label: 'Level',
         items: [
