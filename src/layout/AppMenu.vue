@@ -29,15 +29,15 @@ const model = ref([
             { label: 'Labs', icon: 'pi pi-fw pi-hourglass', to: '/uikit/media' },
             { label: 'Backlinks', icon: 'pi pi-fw pi-directions-alt', to: '/uikit/menu', preventExact: true },
             { label: 'Tasks', icon: 'pi pi-fw pi-check-circle', to: '/uikit/message' },
-            { label: 'Enterprise', icon: 'pi pi-fw pi-building', to: '/uikit/file' }
+            { label: 'Enterprise', icon: 'pi pi-fw pi-building', to: '/uikit/message' }
         ]
     },
     {
         label: 'Level',
         items: [
             { label: 'Beginner', icon: 'pi pi-fw pi-send', to: '/utilities/icons' },
-            { label: 'Intermediate', icon: 'pi pi-fw pi-car', url: 'https://www.primefaces.org/primeflex/', target: '_blank' },
-            { label: 'Advanced', icon: 'pi pi-fw pi-truck', url: 'https://www.primefaces.org/primeflex/', target: '_blank' }
+            { label: 'Intermediate', icon: 'pi pi-fw pi-car', to: '/utilities/icons' },
+            { label: 'Advanced', icon: 'pi pi-fw pi-truck', to: '/utilities/icons' }
         ]
     }
     // {

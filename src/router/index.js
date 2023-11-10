@@ -36,57 +36,57 @@ const router = createRouter({
                 {
                     path: '/uikit/input',
                     name: 'input',
-                    component: () => import('@/views/uikit/Input.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 {
                     path: '/uikit/floatlabel',
                     name: 'floatlabel',
-                    component: () => import('@/views/uikit/FloatLabel.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 {
                     path: '/uikit/invalidstate',
                     name: 'invalidstate',
-                    component: () => import('@/views/uikit/InvalidState.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 {
                     path: '/uikit/button',
                     name: 'button',
-                    component: () => import('@/views/uikit/Button.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 {
                     path: '/uikit/table',
                     name: 'table',
-                    component: () => import('@/views/uikit/Table.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 {
                     path: '/uikit/list',
                     name: 'list',
-                    component: () => import('@/views/uikit/List.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 {
                     path: '/uikit/tree',
                     name: 'tree',
-                    component: () => import('@/views/uikit/Tree.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 {
                     path: '/uikit/panel',
                     name: 'panel',
-                    component: () => import('@/views/uikit/Panels.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
 
                 {
                     path: '/uikit/overlay',
                     name: 'overlay',
-                    component: () => import('@/views/uikit/Overlay.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 {
                     path: '/uikit/media',
                     name: 'media',
-                    component: () => import('@/views/uikit/Media.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 {
                     path: '/uikit/menu',
-                    component: () => import('@/views/uikit/Menu.vue'),
+                    component: () => import('@/views/uikit/FormLayout.vue'),
                     children: [
                         {
                             path: '/uikit/menu',
@@ -109,12 +109,12 @@ const router = createRouter({
                 {
                     path: '/uikit/message',
                     name: 'message',
-                    component: () => import('@/views/uikit/Messages.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 {
                     path: '/uikit/file',
                     name: 'file',
-                    component: () => import('@/views/uikit/File.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 // {
                 //     path: '/uikit/charts',
@@ -129,32 +129,32 @@ const router = createRouter({
                 {
                     path: '/blocks',
                     name: 'blocks',
-                    component: () => import('@/views/utilities/Blocks.vue')
+                    component: () => import('@/views/utilities/FormLayout.vue')
                 },
                 {
                     path: '/utilities/icons',
                     name: 'icons',
-                    component: () => import('@/views/utilities/Icons.vue')
+                    component: () => import('@/views/utilities/FormLayout.vue')
                 },
                 {
                     path: '/pages/timeline',
                     name: 'timeline',
-                    component: () => import('@/views/pages/Timeline.vue')
+                    component: () => import('@/views/pages/FormLayout.vue')
                 },
                 {
                     path: '/pages/empty',
                     name: 'empty',
-                    component: () => import('@/views/pages/Empty.vue')
+                    component: () => import('@/views/pages/FormLayout.vue')
                 },
                 {
                     path: '/pages/crud',
                     name: 'crud',
-                    component: () => import('@/views/pages/Crud.vue')
+                    component: () => import('@/views/pages/FormLayout.vue')
                 },
                 {
                     path: '/documentation',
                     name: 'documentation',
-                    component: () => import('@/views/utilities/Documentation.vue')
+                    component: () => import('@/views/utilities/FormLayout.vue')
                 }
             ]
         },
