@@ -10,13 +10,19 @@ onBeforeMount(() => {
     productService.getVideos().then((data) => (videos.value = data));
 });
 
-// const formatDate = (value) => {
-//     return value.toLocaleDateString('en-US', {
-//         day: '2-digit',
-//         month: '2-digit',
-//         year: 'numeric'
-//     });
-// };
+const getProgress = (value) => {
+    return value;
+};
+
+const formatDate = ({ item_date_updated, item_date_created }) => {
+    const dateRaw = item_date_updated ?? item_date_created;
+    const dateSafe = new Date(dateRaw.split(' ')[0]);
+
+    return dateSafe.toLocaleDateString('en-US', {
+        month: 'short',
+        year: 'numeric'
+    });
+};
 </script>
 
 <template>
@@ -78,12 +84,18 @@ onBeforeMount(() => {
                 <template #list="slotProps">
                     <div class="col-12">
                         <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4">
-                            <img class="shadow-2 block xl:block mx-auto border-round" style="height: 130px; width: 230px" :src="`/layout/images/aaDefault.png`" :alt="slotProps.data.item_title" />
+                            <!-- backup for below img :src="`/layout/images/aaDefault.png`" -->
+                            <img class="shadow-2 block xl:block mx-auto border-round" style="height: 130px; width: 230px" :src="slotProps.data.item_image" :alt="slotProps.data.item_title" />
                             <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
                                 <div class="flex flex-column align-items-center sm:align-items-start gap-3">
                                     <span>{{ slotProps.data.item_type.toUpperCase() }}</span>
                                     <div class="text-2xl font-bold text-900 margin-top-small">{{ slotProps.data.item_title }}</div>
-                                    <ProgressBar value="50"></ProgressBar>
+                                    <p style="color: var(--text-color-secondary)">{{ slotProps.data.item_learners_count }} learners | {{ formatDate(slotProps.data) }}</p>
+                                    <div style="width: 100px">
+                                        <ProgressBar :value="getProgress(slotProps.data.item_progress)" style="height: 3px" :showValue="false"></ProgressBar>
+                                        <span style="color: var(--text-color-secondary)">{{ `${slotProps.data.item_video_duration.replace(':', 'm ')}s` }}</span>
+                                    </div>
+
                                     <!-- <Rating :modelValue="slotProps.data.rating" readonly :cancel="false"></Rating> -->
                                     <!-- <div class="flex align-items-center gap-3">
                                         <span class="flex align-items-center gap-2">

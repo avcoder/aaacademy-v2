@@ -1,7 +1,7 @@
 <script setup>
 import Sidebar from 'primevue/sidebar';
 
-import { ref, watch } from 'vue';
+import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 const router = useRouter();
 
