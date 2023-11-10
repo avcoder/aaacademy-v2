@@ -11,7 +11,7 @@ onBeforeMount(() => {
 });
 
 const getProgress = (value) => {
-    return value;
+    return value ? value : Math.floor(Math.random() * 100);
 };
 
 const formatDate = ({ item_date_updated, item_date_created }) => {
