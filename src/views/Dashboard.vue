@@ -167,7 +167,7 @@ watch(
         <div class="col-12 xl:col-6">
             <div class="card">
                 <div class="flex justify-content-between align-items-center mb-5">
-                    <h5>Most Watched Videos</h5>
+                    <h5>My Progress</h5>
                     <div>
                         <Button icon="pi pi-ellipsis-v" class="p-button-text p-button-plain p-button-rounded" @click="$refs.menu2.toggle($event)"></Button>
                         <Menu ref="menu2" :popup="true" :model="items"></Menu>

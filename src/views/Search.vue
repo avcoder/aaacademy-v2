@@ -33,7 +33,47 @@ onBeforeMount(() => {
         </div>
     </div>
     <div class="grid">
-        <div class="col-12">
+        <div class="col-12" v-if="videos.value">
+            <div class="border-round border-1 surface-border p-4 surface-card">
+                <ul class="m-0 p-0 list-none">
+                    <li class="mb-3">
+                        <div class="flex">
+                            <Skeleton width="230px" height="130px" class="mr-2"></Skeleton>
+                            <div class="align-self-center" style="flex: 1">
+                                <Skeleton width="15%" class="mb-2"></Skeleton>
+                                <Skeleton width="100%" class="mb-4"></Skeleton>
+                                <Skeleton width="80%" class="mb-2"></Skeleton>
+                                <Skeleton width="25%" class="mb-2"></Skeleton>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-3">
+                        <div class="flex">
+                            <Skeleton width="230px" height="130px" class="mr-2"></Skeleton>
+                            <div class="align-self-center" style="flex: 1">
+                                <Skeleton width="15%" class="mb-2"></Skeleton>
+                                <Skeleton width="100%" class="mb-4"></Skeleton>
+                                <Skeleton width="80%" class="mb-2"></Skeleton>
+                                <Skeleton width="25%" class="mb-2"></Skeleton>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="flex">
+                            <Skeleton width="230px" height="130px" class="mr-2"></Skeleton>
+                            <div class="align-self-center" style="flex: 1">
+                                <Skeleton width="15%" class="mb-2"></Skeleton>
+                                <Skeleton width="100%" class="mb-4"></Skeleton>
+                                <Skeleton width="80%" class="mb-2"></Skeleton>
+                                <Skeleton width="25%" class="mb-2"></Skeleton>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12" v-else>
             <DataView :value="videos">
                 <template #list="slotProps">
                     <div class="col-12">
