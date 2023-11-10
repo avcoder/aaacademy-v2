@@ -9,7 +9,8 @@ const model = ref([
         items: [
             { label: 'Start Learning', icon: 'pi pi-fw pi-home', to: '/' },
             { label: 'My Library', icon: 'pi pi-fw pi-book', to: '/blocks', badge: 'NEW' },
-            { label: 'Community', icon: 'pi pi-fw pi-users', to: '/community' }
+            { label: 'Community', icon: 'pi pi-fw pi-users', to: '/community' },
+            { label: 'View video (temporary)', icon: 'pi pi-fw pi-youtube', to: '/learning' }
         ]
     },
     {
