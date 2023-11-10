@@ -129,7 +129,7 @@ const router = createRouter({
                 {
                     path: '/blocks',
                     name: 'blocks',
-                    component: () => import('@/views/utilities/FormLayout.vue')
+                    component: () => import('@/views/uikit/FormLayout.vue')
                 },
                 {
                     path: '/utilities/icons',
