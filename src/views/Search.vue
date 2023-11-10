@@ -23,9 +23,11 @@ onBeforeMount(() => {
     <div class="grid">
         <div class="col-12">
             <div class="card">
-                <div class="row">
+                <div class="row" style="display: flex; gap: 10px; justify-content: center">
                     <Dropdown v-model="selectedCity" :options="cities" optionLabel="name" placeholder="English" class="w-full md:w-8rem" />
                     <MultiSelect v-model="selectedCities" :options="cities" optionLabel="name" placeholder="Type" :maxSelectedLabels="3" class="w-full md:w-7rem" />
+                    <Dropdown v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Level" class="w-full md:w-8rem" />
+                    <Button label="Reset" severity="info" text />
                 </div>
             </div>
         </div>
