@@ -28,7 +28,7 @@ const shouldShowListButton = () => {
     </button>
 
     <Sidebar v-model:visible="visible" position="right" :transitionOptions="'.3s cubic-bezier(0, 0, 0.2, 1)'" class="layout-config-sidebar w-20rem">
-        <Accordion :activeIndex="0">
+        <Accordion :multiple="true" :activeIndex="[0]">
             <AccordionTab header="Introduction">
                 <DataTable :value="['hi', 'bye']">
                     <ul>
