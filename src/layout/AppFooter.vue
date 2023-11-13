@@ -14,6 +14,7 @@ const logoUrl = computed(() => {
         <img :src="logoUrl" alt="Logo" height="20" class="mr-2" />
         by
         <span class="font-medium ml-2">Jay, Jared, Nick, Albert</span>
+        <span>- <a href="https://www.youtube.com/watch?v=2b8xWbMUpn8" target="_blank" style="text-decoration: underline">View our presentation</a> </span>
     </div>
 </template>
 <style lang="scss" scoped></style>
