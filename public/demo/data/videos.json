@@ -1,46 +1,40 @@
 {
     "data": [
         {
-            "item_title": "Integrating Google Sheets",
+            "item_title": "MultiView Campaigns",
             "item_type": "course",
-            "item_image": "https://placehold.co/230x150",
+            "item_image": "https://agencyanalytics.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fdfcvkz6j859j%2F65TEuZOlZaFmL2MeGu9zee%2Fd8d8deed4e775606868d5d09c22c1db6%2Fcustom-dashboards_2x.png&w=1920&q=75",
             "item_level": "beginner",
             "item_in_library": false,
-            "item_learners_count": 123,
-            "item_date_created": "May 2023",
-            "item_date_update": "Updated Jun 2023",
-            "item_video_duration": "5m 50s",
-            "item_url": "https://www.youtube.com/watch?v=OAzdy0byLmM",
-            "item_description": "In this video, we’ll show you how to get your marketing data from top marketing platforms into Google Sheets for that extra handling and analysis.",
-            "item_progress": "10%"
+            "item_learners_count": 25,
+            "item_date_created": "2023-11-1",
+            "item_date_update": "2023-11-01",
+            "item_video_duration": "6:48",
+            "item_url": "https://fast.wistia.net/embed/iframe/st1ke3ipuh"
         },
         {
-            "item_title": "Quick Start Video",
+            "item_title": " Create Client Logins & Customize Their Access ",
             "item_type": "video",
-            "item_image": "https://placehold.co/230x150",
+            "item_image": "https://agencyanalytics.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fdfcvkz6j859j%2F2is3mfEtlskdtqZaszwLMu%2F6b4e0f720f38557c217c72f44017ea37%2FWhite-label-dashboard-_-reporting-software.png&w=1920&q=75",
             "item_level": "intermediate",
             "item_in_library": true,
-            "item_learners_count": 200,
-            "item_date_created": "June 2023",
-            "item_date_update": "Updated July 2023",
-            "item_video_duration": "15m 50s",
-            "item_url": "https://help.agencyanalytics.com/en/articles/4999051-agencyanalytics-quick-start-video",
-            "item_description": "This video outlines what AgencyAnalytics can do, with the aim of helping you get set up fast.",
-            "item_progress": "50%"
+            "item_learners_count": 1200,
+            "item_date_created": "2018-05-02",
+            "item_date_update": "2018-05-02",
+            "item_video_duration": "1:11",
+            "item_url": "https://fast.wistia.net/embed/iframe/st1ke3ipuh"
         },
         {
-            "item_title": "How to clone a custom metric",
+            "item_title": "Advanced Contains Filter",
             "item_type": "video",
-            "item_image": "https://placehold.co/230x150",
+            "item_image": "https://canny.io/images/f98cf7604af7169dfce7966c477ff6ff.png",
             "item_level": "advanced",
             "item_in_library": true,
-            "item_learners_count": 200,
-            "item_date_created": "Aug 2023",
-            "item_date_update": "Updated Sept 2023",
-            "item_video_duration": "15m 50s",
-            "item_url": "https://help.agencyanalytics.com/en/articles/5571457-how-to-clone-a-custom-metric",
-            "item_description": "Choose to clone custom metrics when creating a new custom metric, via your campaign's settings area.",
-            "item_progress": "0%"
+            "item_learners_count": 5133,
+            "item_date_created": "2023-09-27",
+            "item_date_update": "2023-11-10",
+            "item_video_duration": "7:32",
+            "item_url": "https://fast.wistia.net/embed/iframe/st1ke3ipuh"
         }
     ]
 }

@@ -12,9 +12,10 @@ export default class ProductService {
     }
 
     getVideos() {
-        return fetch('https://184.162.117.121:4433?asset=videos')
-            .then((res) => res.json())
-            .then((d) => d.results.rows);
+        return this.getDemoVideos();
+        // return fetch('https://184.162.117.121:4433?asset=videos')
+        //     .then((res) => res.json())
+        //     .then((d) => d.results.rows);
     }
 
     getProductsWithOrdersSmall() {

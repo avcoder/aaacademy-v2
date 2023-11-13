@@ -26,10 +26,7 @@
         <div class="col-12">
             <div class="card">
                 <video controls width="100%">
-                    <source
-                        src="https://awevideo.s3.amazonaws.com/video-22315925-0ff2d182b7d3eb7aa177dd18d08500ed.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20231110%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231110T143353Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c1b0eb78aae78bdfd9cc6a1bf4a563ed7d483ad81b700623718852076aad964c"
-                        type="video/mp4"
-                    />
+                    <source src="https://fast.wistia.net/embed/iframe/st1ke3ipuh" type="video/mp4" />
                     Download the
                     <a href="/media/cc0-videos/flower.mp4">MP4</a>
                     video.
